@@ -43,3 +43,60 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
+body {
+    padding-top: 5em;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px; 
+    grid-auto-rows: minmax(100px, auto); 
+}
+
+.box1 {
+    grid-column: span 4; 
+    grid-row: span 2; 
+    background-color: #a61e4d;
+    border: 1px solid black;
+    font-size: 2.9em;
+}
+
+.box2 {
+    grid-column: span 2; 
+    grid-row: span 2; 
+    background-color: #ffec99;
+    border: 1px solid black;
+    font-size: 2.9em;
+}
+
+.box3 {
+    grid-column: span 2;
+    background-color: #a9e34b;
+    border: 1px solid black;
+    font-size: 2.9em;
+}
+
+.box4 {
+    grid-column: span 1; 
+    background-color: #c5f6fa;
+    border: 1px solid black;
+    font-size: 2.9em;
+}
+
+.box5 {
+    grid-column: span 1; 
+    background-color: #6741d9;
+    border: 1px solid black;
+    font-size: 2.9em;
+
+}
+
+.box6 {
+    grid-column: span 4; 
+    background-color: #f06595;
+    border: 1px solid black;
+    font-size: 2.9em;
+}
+
+
+    

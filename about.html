@@ -17,7 +17,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Firstname Lastname</a>
+    <a class="navbar-brand" href="#">Ayhan Aydin</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,9 +25,6 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="grid.html">Grid</a>
@@ -48,16 +45,21 @@
     <div id="content"></div>
 
     <script>
-        const user = {
-            name: '',
-            imageUrl: '',
-            bio: ''
+        const aydin = {
+            name: 'Ayhan Aydin',
+            imageUrl: 'images/sport.jpg',
+            bio: 'My name is Ayhan. I love sports. I like to travel and try new things. My goal is to become a developer and create various applications. I like to eat fried chicken and pasta.'
         };
 
         // Step one - Create a React element
+        const header = React.createElement('h1', null, aydin.name);
+        const image = React.createElement('img', { src: aydin.imageUrl, alt: aydin.name, width: 200, height: 200 });
+        const bio = React.createElement('content', null, aydin.bio);
 
         // Step 2: Render the React element
-
+        ReactDOM.render(header, document.getElementById('h1'));
+        ReactDOM.render(image, document.getElementById('img'));
+        ReactDOM.render(bio, document.getElementById('content'));
     </script>
 
 </main><!-- /.container -->

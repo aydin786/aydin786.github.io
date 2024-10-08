@@ -103,16 +103,18 @@ body {
     text-align: center;
 }
 
-.progress-bar-container {
-    height: 25px;
-    background-color: #e0e0e0;
-}
-
 .progress-bar {
     width: 70%;
     height: 25px;
     background-color: #17a2b8; 
 }
+
+.progress-bar-container {
+    height: 25px;
+    background-color: #e0e0e0;
+}
+
+
 
 .sub-heading {
     text-align: center;
